@@ -1,5 +1,5 @@
 contract("helloworld", function(accounts) {
-	it("2+2 =4 ", function(){
+	it.skip("2+2 =4 ", function(){
 		assert.equal(2+2, 4);
 	});
 

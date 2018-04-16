@@ -1,14 +1,13 @@
 pragma solidity ^0.4.17;
 contract NamedRobot {
 
-	string private name = "Hal Finney"; 
+	bytes32 private name = "Hal Finney"; 
 	
-	function getName() public view returns(string) {
+	function getName() public view returns(bytes32) {
 		return name;
 	}
 
-	function setName(string newName) public returns(string) {
+	function setName(bytes32 newName) public  {
 		name = newName;
-		return name;
 	}
 }

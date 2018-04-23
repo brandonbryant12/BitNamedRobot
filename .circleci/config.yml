@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    machine: true
+    steps:
+      - checkout
+      - run: docker run -d -p 7545:8545 --name ganache stevenzeiler/ganache
+      - run: npm install
+      - run: npm test
+      - run: npm run deploy:ropsten

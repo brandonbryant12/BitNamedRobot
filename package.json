@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "lite-server",
-    "test": "truffle test"
+    "test": "truffle test",
+    "deploy:ropsten": "truffle migrate --network ropsten"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "truffle": "^4.1.6"
+    "truffle": "^4.1.6",
+    "truffle-hdwallet-provider": "0.0.3"
   }
 }

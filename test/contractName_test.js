@@ -1,6 +1,5 @@
 var NamedRobot = artifacts.require('./NamedRobot.sol')
-
-
+/*
 contract("NamedRobot", function(accounts){
 
 	it.skip("Should have a default name", async function(){
@@ -30,7 +29,7 @@ contract("NamedRobot", function(accounts){
 		assert.equal(hex_to_ascii(getNameResult), newName, 'Name was not BrandonBot');
 
 	});
-});
+});*/
 
 function hex_to_ascii(str1)
  {
